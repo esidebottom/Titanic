@@ -51,10 +51,11 @@ def main():
     if st.button('Predict'):
         result=PredictionFunction(Pclass,Sex,Age,SibSp,Parch,Fare,Embarked)
         st.markdown(f'{result}')
-        if prediction==1:
+        if result==1:
             st.balloons()
         else:
             st.snow()
 main()
+
 
 
